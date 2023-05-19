@@ -1,0 +1,198 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: xWolf3D, Configuration: Xbox_Debug|Xbox -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP000048.rsp" with contents
+[
+/Od /D "_DEBUG" /D "_XBOX" /D "_WIN32" /D "NO_STDIO_REDIRECT" /D "strcasecmp=stricmp" /D "fopen=fopex" /D "open=opex" /D "mkdir=mkdix" /D "unlink=unlinx" /D "stat=stax" /D "exit=exix" /D "FindFirstFileA=FindFirstFilex" /D "_MBCS" /Gm /EHsc /RTC1 /MTd /arch:SSE /Fo"Xbox_Debug/" /Fd"Xbox_Debug/vc70.pdb" /W0 /c /ZI
+.\src\xbox\xboxjoy.c
+.\src\xbox\xboxconfig.cpp
+.\src\xbox\xboxmissing.c
+.\src\wl_state.cpp
+.\src\wl_shade.cpp
+.\src\wl_play.cpp
+.\src\wl_parallax.cpp
+.\src\wl_menu.cpp
+.\src\wl_main.cpp
+.\src\wl_inter.cpp
+.\src\wl_game.cpp
+.\src\wl_floorceiling.cpp
+.\src\wl_draw.cpp
+.\src\wl_dir3dspr.cpp
+.\src\wl_debug.cpp
+.\src\wl_cloudsky.cpp
+.\src\wl_atmos.cpp
+.\src\wl_agent.cpp
+.\src\wl_act2.cpp
+.\src\wl_act1.cpp
+.\src\signon.cpp
+.\src\sdl_winmain.cpp
+.\src\id_vl.cpp
+.\src\id_vh.cpp
+.\src\id_us_1.cpp
+.\src\id_sd.cpp
+.\src\id_pm.cpp
+.\src\id_in.cpp
+.\src\id_ca.cpp
+.\src\fmopl.cpp
+.\src\wl_text.cpp
+]
+Creating command line "cl.exe @e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP000048.rsp /nologo"
+Creating temporary file "e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP000049.rsp" with contents
+[
+/OUT:"E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug/xWolf3D.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug/xWolf3D.pdb" /MAP /subsystem:xbox /MACHINE:I386 xapilibd.lib d3d8d.lib xgraphicsd.lib dsoundd.lib dmusicd.lib xactengd.lib xsndtrkd.lib xvoiced.lib xonlined.lib xboxkrnl.lib xbdm.lib E:\BAK\D\xbox\xProjects\libsdlx\Debug\libSDLxd.lib libSmpegX.lib SDL_config.lib
+.\xbox_debug\wl_text.obj
+.\xbox_debug\fmopl.obj
+.\xbox_debug\id_ca.obj
+.\xbox_debug\id_in.obj
+.\xbox_debug\id_pm.obj
+.\xbox_debug\id_sd.obj
+.\xbox_debug\id_us_1.obj
+.\xbox_debug\id_vh.obj
+.\xbox_debug\id_vl.obj
+.\xbox_debug\sdl_winmain.obj
+.\xbox_debug\signon.obj
+.\xbox_debug\wl_act1.obj
+.\xbox_debug\wl_act2.obj
+.\xbox_debug\wl_agent.obj
+.\xbox_debug\wl_atmos.obj
+.\xbox_debug\wl_cloudsky.obj
+.\xbox_debug\wl_debug.obj
+.\xbox_debug\wl_dir3dspr.obj
+.\xbox_debug\wl_draw.obj
+.\xbox_debug\wl_floorceiling.obj
+.\xbox_debug\wl_game.obj
+.\xbox_debug\wl_inter.obj
+.\xbox_debug\wl_main.obj
+.\xbox_debug\wl_menu.obj
+.\xbox_debug\wl_parallax.obj
+.\xbox_debug\wl_play.obj
+.\xbox_debug\wl_shade.obj
+.\xbox_debug\wl_state.obj
+.\xbox_debug\xboxmissing.obj
+.\xbox_debug\xboxconfig.obj
+.\xbox_debug\xboxjoy.obj
+]
+Creating command line "link.exe @e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP000049.rsp"
+Creating temporary file "e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP00004A.rsp" with contents
+[
+/OUT:"e:\bak\d\xbox\xprojects\xwolf3d2\xbox_debug\xWolf3D.xbe" /stack:"65536" /debug /nolibwarn
+.\xbox_debug\xWolf3D.exe
+]
+Creating command line "imagebld.exe @e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP00004A.rsp /nologo"
+Creating temporary file "e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP00004B.rsp" with contents
+[
+"e:\bak\d\xbox\xprojects\xwolf3d2\xbox_debug\xWolf3D.xbe" "xf:\devkit\xWolf3D\xWolf3D.xbe"
+]
+Creating command line "xbecopy.exe @e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\RSP00004B.rsp /nologo"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+xboxjoy.c
+Generating Code...
+Compiling...
+xboxconfig.cpp
+Generating Code...
+Compiling...
+xboxmissing.c
+Generating Code...
+Compiling...
+wl_state.cpp
+wl_shade.cpp
+wl_play.cpp
+wl_parallax.cpp
+wl_menu.cpp
+wl_main.cpp
+wl_inter.cpp
+wl_game.cpp
+wl_floorceiling.cpp
+wl_draw.cpp
+wl_dir3dspr.cpp
+wl_debug.cpp
+wl_cloudsky.cpp
+wl_atmos.cpp
+wl_agent.cpp
+wl_act2.cpp
+wl_act1.cpp
+signon.cpp
+sdl_winmain.cpp
+id_vl.cpp
+Generating Code...
+Compiling...
+id_vh.cpp
+id_us_1.cpp
+id_sd.cpp
+id_pm.cpp
+id_in.cpp
+id_ca.cpp
+fmopl.cpp
+wl_text.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+libSDLxd.lib(framing.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(bitwise.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(vorbisfile.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(window.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(synthesis.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(smallft.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(sharedbook.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(res0.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(registry.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(psy.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(mdct.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(mapping0.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(lsp.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(lpc.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(info.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(floor1.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(floor0.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(envelope.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(codebook.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(block.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(bitrate.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSDLxd.lib(analysis.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(bitwindow.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(decoders.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(filter.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(filter_2.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(gdith.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(huffmantable.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(jrevdct.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(motionvector.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEG.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGaudio.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGfilter.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(mpeglayer1.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(mpeglayer2.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(mpeglayer3.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGlist.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGring.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGstream.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGsystem.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(mpegtable.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(mpegtoraw.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(MPEGvideo.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(parseblock.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(readfile.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(smpeg.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(util.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+libSmpegX.lib(video.obj) : warning LNK4204: 'E:\BAK\D\xbox\xProjects\xWolf3D2\Xbox_Debug\vc70.pdb' is missing debugging information for referencing module; linking object as if no debug info
+Creating Xbox Image...
+Copying files to the Xbox...
+xbecopy: error X1001: Could not connect to Xbox '192.168.1.4'
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://e:\Bak\D\xbox\xProjects\xWolf3D2\Xbox_Debug\BuildLog.htm"
+xWolf3D - 1 error(s), 49 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
