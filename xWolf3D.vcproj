@@ -271,8 +271,8 @@
 				Name="VCCLCompilerTool"
 				Optimization="3"
 				OmitFramePointers="TRUE"
-				AdditionalIncludeDirectories="&quot;C:\Documents and Settings\Owner\Desktop\roms\Marathon Related\New Folder (4)\xWolf3D2\src\SDL&quot;"
-				PreprocessorDefinitions="NDEBUG;_XBOX;WIN32;NO_STDIO_REDIRECT;strcasecmp=stricmp;fopen=fopex;open=opex;mkdir=mkdix;unlink=unlinx;stat=stax;exit=exix;FindFirstFileA=FindFirstFilex"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)/3rdparty/Include/SDL&quot;"
+				PreprocessorDefinitions="NDEBUG;_XBOX;WIN32;NO_STDIO_REDIRECT;strcasecmp=stricmp;fopen=fopex;open=wlopen;mkdir=wlmkdir;unlink=wlunlink;stat=wlstat;exit=wlexit;putenv=wlputenv;FindFirstFileA=FindFirstFilex"
 				StringPooling="TRUE"
 				MinimalRebuild="FALSE"
 				BasicRuntimeChecks="0"
@@ -289,6 +289,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="xapilib.lib d3d8.lib xgraphics.lib dsound.lib dmusic.lib xacteng.lib xsndtrk.lib xvoice.lib xonlines.lib xboxkrnl.lib libSDLx.lib libSmpegX.lib SDL_config.lib"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(SolutionDir)/3rdparty/Libs"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="FALSE"
 				ProgramDatabaseFile="$(OutDir)/$(ProjectName).pdb"
@@ -322,183 +323,183 @@ bundler xbelogo\saveimage.rdf -o xbelogo\saveimage.xbx
 	</References>
 	<Files>
 		<Filter
-			Name="Source Files"
-			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
-			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			Name="xbox"
+			Filter="">
 			<File
-				RelativePath=".\src\fmopl.cpp">
+				RelativePath=".\xbox\xboxconfig.cpp">
 			</File>
 			<File
-				RelativePath=".\src\id_ca.cpp">
+				RelativePath=".\xbox\xboxconfig.h">
 			</File>
 			<File
-				RelativePath=".\src\id_in.cpp">
+				RelativePath=".\xbox\xboxjoy.c">
 			</File>
 			<File
-				RelativePath=".\src\id_pm.cpp">
+				RelativePath=".\xbox\xboxjoy.h">
 			</File>
 			<File
-				RelativePath=".\src\id_sd.cpp">
+				RelativePath=".\xbox\xboxmissing.c">
 			</File>
 			<File
-				RelativePath=".\src\id_us_1.cpp">
-			</File>
-			<File
-				RelativePath=".\src\id_vh.cpp">
-			</File>
-			<File
-				RelativePath=".\src\id_vl.cpp">
-			</File>
-			<File
-				RelativePath=".\src\sdl_winmain.cpp">
-			</File>
-			<File
-				RelativePath=".\src\signon.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_act1.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_act2.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_agent.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_atmos.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_cloudsky.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_debug.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_dir3dspr.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_draw.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_floorceiling.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_game.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_inter.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_main.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_menu.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_parallax.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_play.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_shade.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_state.cpp">
-			</File>
-			<File
-				RelativePath=".\src\wl_text.cpp">
-			</File>
-			<Filter
-				Name="xbox"
-				Filter="">
-				<File
-					RelativePath=".\src\xbox\xboxconfig.cpp">
-				</File>
-				<File
-					RelativePath=".\src\xbox\xboxjoy.c">
-				</File>
-				<File
-					RelativePath=".\src\xbox\xboxmissing.c">
-				</File>
-			</Filter>
-		</Filter>
-		<Filter
-			Name="Header Files"
-			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
-			<File
-				RelativePath=".\src\audiosod.h">
-			</File>
-			<File
-				RelativePath=".\src\audiowl6.h">
-			</File>
-			<File
-				RelativePath=".\src\f_spear.h">
-			</File>
-			<File
-				RelativePath=".\src\fmopl.h">
-			</File>
-			<File
-				RelativePath=".\src\foreign.h">
-			</File>
-			<File
-				RelativePath=".\src\gfxv_apo.h">
-			</File>
-			<File
-				RelativePath=".\src\gfxv_sod.h">
-			</File>
-			<File
-				RelativePath=".\src\gfxv_wl6.h">
-			</File>
-			<File
-				RelativePath=".\src\gp2x.h">
-			</File>
-			<File
-				RelativePath=".\src\id_ca.h">
-			</File>
-			<File
-				RelativePath=".\src\id_in.h">
-			</File>
-			<File
-				RelativePath=".\src\id_pm.h">
-			</File>
-			<File
-				RelativePath=".\src\id_sd.h">
-			</File>
-			<File
-				RelativePath=".\src\id_us.h">
-			</File>
-			<File
-				RelativePath=".\src\id_vh.h">
-			</File>
-			<File
-				RelativePath=".\src\id_vl.h">
-			</File>
-			<File
-				RelativePath=".\src\version.h">
-			</File>
-			<File
-				RelativePath=".\src\wl_atmos.h">
-			</File>
-			<File
-				RelativePath=".\src\wl_cloudsky.h">
-			</File>
-			<File
-				RelativePath=".\src\wl_def.h">
-			</File>
-			<File
-				RelativePath=".\src\wl_menu.h">
-			</File>
-			<File
-				RelativePath=".\src\wl_shade.h">
+				RelativePath=".\xbox\xboxmissing.h">
 			</File>
 		</Filter>
-		<Filter
-			Name="Resource Files"
-			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
-		</Filter>
+		<File
+			RelativePath=".\audiosod.h">
+		</File>
+		<File
+			RelativePath=".\audiowl6.h">
+		</File>
+		<File
+			RelativePath=".\f_spear.h">
+		</File>
+		<File
+			RelativePath=".\fmopl.cpp">
+		</File>
+		<File
+			RelativePath=".\fmopl.h">
+		</File>
+		<File
+			RelativePath=".\foreign.h">
+		</File>
+		<File
+			RelativePath=".\gfxv_apo.h">
+		</File>
+		<File
+			RelativePath=".\gfxv_sod.h">
+		</File>
+		<File
+			RelativePath=".\gfxv_wl6.h">
+		</File>
+		<File
+			RelativePath=".\gp2x.h">
+		</File>
+		<File
+			RelativePath=".\id_ca.cpp">
+		</File>
+		<File
+			RelativePath=".\id_ca.h">
+		</File>
+		<File
+			RelativePath=".\id_in.cpp">
+		</File>
+		<File
+			RelativePath=".\id_in.h">
+		</File>
+		<File
+			RelativePath=".\id_pm.cpp">
+		</File>
+		<File
+			RelativePath=".\id_pm.h">
+		</File>
+		<File
+			RelativePath=".\id_sd.cpp">
+		</File>
+		<File
+			RelativePath=".\id_sd.h">
+		</File>
+		<File
+			RelativePath=".\id_us.h">
+		</File>
+		<File
+			RelativePath=".\id_us_1.cpp">
+		</File>
+		<File
+			RelativePath=".\id_vh.cpp">
+		</File>
+		<File
+			RelativePath=".\id_vh.h">
+		</File>
+		<File
+			RelativePath=".\id_vl.cpp">
+		</File>
+		<File
+			RelativePath=".\id_vl.h">
+		</File>
+		<File
+			RelativePath=".\sdl_winmain.cpp">
+		</File>
+		<File
+			RelativePath=".\signon.cpp">
+		</File>
+		<File
+			RelativePath=".\sodpal.inc">
+		</File>
+		<File
+			RelativePath=".\version.h">
+		</File>
+		<File
+			RelativePath=".\wl_act1.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_act2.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_agent.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_atmos.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_atmos.h">
+		</File>
+		<File
+			RelativePath=".\wl_cloudsky.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_cloudsky.h">
+		</File>
+		<File
+			RelativePath=".\wl_debug.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_def.h">
+		</File>
+		<File
+			RelativePath=".\wl_dir3dspr.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_draw.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_floorceiling.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_game.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_inter.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_main.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_menu.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_menu.h">
+		</File>
+		<File
+			RelativePath=".\wl_parallax.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_play.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_shade.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_shade.h">
+		</File>
+		<File
+			RelativePath=".\wl_state.cpp">
+		</File>
+		<File
+			RelativePath=".\wl_text.cpp">
+		</File>
+		<File
+			RelativePath=".\wolfpal.inc">
+		</File>
 	</Files>
 	<Globals>
 	</Globals>
